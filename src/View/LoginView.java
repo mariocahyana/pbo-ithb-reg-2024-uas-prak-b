@@ -25,7 +25,7 @@ public class LoginView {
 
         DesignPanel gradientPanel = new DesignPanel(new Color(0, 102, 204), new Color(102, 204, 255));
 
-        ImageIcon logoIcon = new ImageIcon("UAS\\src\\Asset\\logo2.png");
+        ImageIcon logoIcon = new ImageIcon("UASPBO\\src\\Asset\\logo2.png");
         Image logoImg = logoIcon.getImage().getScaledInstance(120, 120, Image.SCALE_SMOOTH);
         JLabel logoLabel = new JLabel(new ImageIcon(logoImg));
         logoLabel.setBounds(140, 30, 120, 120);
