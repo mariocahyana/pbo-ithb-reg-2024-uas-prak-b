@@ -120,7 +120,7 @@ public class AddTransaksiDetailView {
         if (success) {
             AlertDesignTemplate.showInfoDialog(frame, "Success", "Yeyy, berhasil.");
             frame.dispose();
-            new MainMenu();
+            new CustomerMenu();
         } else {
             AlertDesignTemplate.showErrorDialog(frame, "Error", "Yahh, gagal.");
         }

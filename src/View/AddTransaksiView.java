@@ -62,7 +62,7 @@ public class AddTransaksiView {
         phoneField.setBounds(180, 150, 250, 25);
         gradientPanel.add(phoneField);
 
-        JLabel weightLabel = new JLabel("Weight (kkg):");
+        JLabel weightLabel = new JLabel("Weight (kg):");
         weightLabel.setBounds(50, 190, 120, 25);
         weightLabel.setForeground(Color.WHITE);
         gradientPanel.add(weightLabel);
@@ -120,6 +120,8 @@ public class AddTransaksiView {
 
         if (transactionController.inputTrans(1, deliveryType, weightNum, totalCost, name, address, phone)) {
             AlertDesignTemplate.showInfoDialog(frame, "Success", "Transaksi berhasil disimpan.");
+            frame.dispose();
+            new CustomerMenu();
         } else {
             AlertDesignTemplate.showErrorDialog(frame, "Error", "Gagal menyimpan transaksi.");
         }
